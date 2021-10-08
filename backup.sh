@@ -8,7 +8,7 @@ HOSTNAME=$(hostname)
 CUSTOM=$(date +"%F")
 LOG_LOCATION='/opt/app/arkcase/log'
 LOG_FILE='$LOG_LOCATION/bactest-$HOSTNAME.tar.gz'
-DEST_LOCATION=''
+DEST_LOCATION='/sharecare-prod-s3fs/'
 
 
 if [[ ! -d /opt/$YEAR ]] || [[ ! -d /opt/$YEAR/$MONTH ]]; then
